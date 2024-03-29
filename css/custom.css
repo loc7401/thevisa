@@ -1,0 +1,681 @@
+#contact {
+    width: 100vw;
+    background-color: #0e0e56;
+}
+
+#header {
+    width: 100vw;
+    height: 800px;
+    background-image: linear-gradient(to left, rgb(124 59 0 / 61%), rgb(4 13 84 / 78%)),
+        url(/assets/images/para-08.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.height-100 {
+    height: 100%;
+}
+
+.mr-60px {
+    margin-right: 60px;
+}
+
+.color-primary {
+    color: var(--primary-color);
+}
+
+.text-read-more-white {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.text-read-more-black {
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.login-wrapper .nav-link,
+.social-wrapper .nav-link {
+    color: white;
+    display: block;
+    height: 100%;
+    font-size: 0.8rem;
+    text-wrap: nowrap;
+}
+
+.login-wrapper li:last-child {
+    margin-left: 20px;
+}
+
+.login-wrapper li:last-child::before {
+    content: "";
+    display: inline-block;
+    top: 35%;
+    left: -10%;
+    width: 1px;
+    height: 14px;
+    background-color: #fff;
+    position: absolute;
+}
+
+.login-wrapper i {
+    margin-right: 5px;
+}
+
+.social-wrapper li:first-child {
+    margin-right: 20px;
+}
+
+.social-wrapper li:first-child::before {
+    content: "";
+    display: inline-block;
+    top: 35%;
+    right: 26%;
+    width: 1px;
+    height: 14px;
+    background-color: #fff;
+    position: absolute;
+}
+
+.navbar-wrapper {
+    overflow: hidden;
+}
+
+.navbar-wrapper .navbar {
+    float: right;
+    margin-right: 65px;
+}
+
+.page-list .nav-link {
+    color: white;
+    font-weight: 500;
+}
+
+.page-list li {
+    padding: 0px 10px;
+    font-size: 1rem;
+    position: relative;
+}
+
+.page-list li::after {
+    content: "";
+    display: inline-block;
+    top: -66%;
+    right: 21%;
+    width: 0px;
+    height: 2px;
+    background-color: var(--primary-color);
+    position: absolute;
+    transition: width 0.4s;
+}
+
+.page-list li:hover::after {
+    width: 46px;
+}
+
+.page-list li:last-child {
+    background-color: var(--primary-color);
+    border-radius: 4px;
+}
+
+.logo-company h3 {
+    color: white;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.logo-company p {
+    color: white;
+    font-size: 0.8rem;
+}
+
+.logo-wrapper img {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.text-wrapper {
+    line-height: 5%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.header-content h1 {
+    margin-top: 170px;
+    font-size: 4rem;
+    color: white;
+}
+
+.input-wrapper {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 50px 0 50px 0;
+    width: 1060px;
+}
+
+.input-wrapper .col-md-3 {
+    width: 250px;
+}
+
+.input-wrapper .col-md-3 input,
+.form-select {
+    height: 50px;
+}
+
+.input-wrapper .col-md-3 label {
+    color: white;
+}
+
+.input-wrapper .col-md-3 button,
+.section-infor-partner .btn {
+    width: 200px;
+    height: 50px;
+    background-color: var(--primary-color);
+}
+
+.sticky-wrapper {
+    margin-top: 50px;
+}
+
+.sticky-wrapper .list-inline-item {
+    color: white;
+    font-size: 1.2rem;
+    margin-right: 50px;
+}
+
+.sticky-wrapper .list-inline-item i {
+    color: var(--primary-color);
+    margin-right: 10px;
+}
+
+.section-visa .container .row {
+    justify-content: center;
+}
+
+.visa-mission .col-lg-4 img,
+.section-choose-visa .row img,
+.row-country .read-more-wrapper img {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 12px;
+}
+
+.section-visa-type .col-lg-4 {
+    width: 380px;
+    padding: 0 50px;
+}
+
+.section-visa-type .container .row {
+    justify-content: center;
+}
+
+.visa-type {
+    background-image: url(/assets/images/vecteezy_white-abstract-background-design_6655390.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 720px;
+    width: 100vw;
+}
+
+.visa-type .container .row {
+    margin-top: 50px;
+}
+
+.visa-type .col-lg-12 h3 {
+    margin-right: 50px;
+}
+
+.separate::after {
+    content: "";
+    display: inline-block;
+    bottom: -30%;
+    top: var(--top);
+    right: var(--right);
+    left: var(--left);
+    width: 52px;
+    height: 2px;
+    background-color: var(--primary-color);
+    position: absolute;
+}
+
+.visa-separate {
+    --right: 50%;
+}
+
+.country-separate {
+    --right: 39%;
+}
+
+.download-separate {
+    --left: 0;
+    --top: 75%;
+}
+
+.staff-separate {
+    --left: 7%;
+}
+
+.partner-separate {
+    --left: 49%;
+}
+
+.visa-type .col-lg-4 img {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.visa-type .immigrant-wrapper .col-lg-4:first-child {
+    text-align: right;
+}
+
+/* .immigrant-wrapper .col-lg-4 a:hover {
+    color: var(--primary-color);
+} */
+
+.steps-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.steps-wrapper .col-lg-4 {
+    height: 100px;
+    width: 300px;
+    margin-right: 50px;
+    padding: 55px 0;
+    background-color: white;
+    box-shadow: 0px 0px 6px 0px #00000026;
+}
+
+.steps-wrapper .col-lg-4 i {
+    font-size: 3rem;
+    margin-right: 18px;
+    color: var(--primary-color);
+}
+
+.steps-wrapper .col-lg-4 .text-wrap {
+    display: block;
+    line-height: 50%;
+    font-size: 1rem;
+}
+
+.section-choose-visa .col-lg-6 {
+    background-image: url(/assets/images/blue.jpg);
+    height: 450px;
+    position: relative;
+}
+
+.immigrant-visa-wrapper {
+    max-width: 500px;
+    text-align: left;
+    color: white;
+    font-size: 1.3rem;
+}
+
+/* .section-choose-visa .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(4 13 84 / 30%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #000; 
+} */
+
+.section-choose-visa .col-lg-6:hover {
+    background-color: rgb(18 32 99 / 61%);
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.section-choose-visa .col-lg-6:hover .immigrant-visa-wrapper a {
+    color: var(--primary-color);
+}
+
+.section-choose-country {
+    background-image: url(/assets/images/25097.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 600px;
+}
+
+.section-choose-country .container-fluid,
+.section-mobile-app .container-fluid,
+.section-coach .container-fluid,
+.seaction-our-staffs .container-fluid,
+.section-infor-partner .list-partner-wrapper,
+.row-mobile-app .col-lg-6,
+.section-infor-partner .list-partner,
+.row-infor {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-choose-country .row-country {
+    min-height: 340px;
+    background-color: white;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 6px 0px;
+}
+
+.row-country,
+.row-mobile-app {
+    max-width: 1140px;
+}
+
+.row-country .col-lg-3 {
+    min-width: 270px;
+    padding: 0 20px 0 40px;
+}
+
+.read-more-wrapper i,
+.read-more-wrapper a:hover {
+    color: var(--primary-color);
+}
+
+.section-mobile-app .row {
+    justify-content: center;
+    align-items: center;
+}
+
+.section-mobile-app .mobile-image img {
+    width: 80%;
+}
+
+.feature-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.feature-item {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.feature-item img {
+    margin-right: 20px;
+    width: 40px;
+}
+
+.seaction-our-staffs {
+    background-image: url(/assets/images/—Pngtree—abstract\ dark\ blue\ gaming\ background_1281422.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 600px;
+}
+
+.seaction-our-staffs .separate {
+    color: white;
+}
+
+.seaction-our-staffs .col-lg-12 {
+    margin-top: 50px;
+}
+
+.row-card {
+    margin-bottom: 70px;
+    max-width: 1140px;
+}
+
+.seaction-our-staffs .col-lg-12,
+.seaction-coach .container-fluid {
+    margin-top: 100px;
+}
+
+.seaction-our-staffs .col-lg-3 {
+    max-width: 285px;
+}
+
+.row-number {
+    background-image: url(/assets/images/orange.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+}
+
+.section-coach .row-title {
+    margin-right: 40%;
+}
+
+.row-infor {
+    background-image: url(/assets/images/vecteezy_white-abstract-background-design_6655390.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+}
+
+.text-infor {
+    max-width: 830px;
+}
+
+.text-infor p {
+    text-align: center;
+}
+
+.section-infor-partner .list-inline li {
+    border: 1px #33333330 solid;
+    padding: 60px 35px;
+}
+
+.section-infor-partner .list-partner {
+    max-width: 1140px;
+}
+
+.list-partner-wrapper .list-inline {
+    margin-bottom: 12px;
+    width: 100%;
+}
+
+.section-infor-partner .col-lg-3 {
+    padding: 65px 30px;
+    border: 1px solid #3333332e;
+    margin: 0 14px 14px 0;
+    max-width: 271px;
+}
+
+.section-infor-partner .col-lg-3:hover {
+    border: 1px solid var(--primary-color);
+    cursor: pointer;
+}
+
+.section-infor-partner .item-partner-wrapper {
+    text-align: center;
+}
+
+.text-infor p {
+    font-size: 1.5rem;
+}
+/* -------Rsponsive-------- */
+@media (max-width: 576px) {
+    #contact {
+        display: none;
+    }
+
+    .logo-wrapper {
+        position: absolute;
+        top: 10px;
+        right: 50%;
+    }
+
+    .navbar-wrapper {
+        position: fixed;
+        top: 10px;
+        left: 22%;
+    }
+
+    .navbar-wrapper .navbar {
+        width: 160px;
+        margin-right: 88px;
+    }
+
+    .navbar-wrapper .navbar .page-list {
+        margin: 6px 44px 1px 34px;
+        background-color: black;
+        width: 120px;
+    }
+
+    .navbar-wrapper .container-fluid button {
+        margin-left: 63%;
+    }
+
+    .header-content h1 {
+        font-size: 2.5rem;
+        text-align: center;
+        margin-top: 90px;
+    }
+
+    .input-wrapper {
+        padding: 22px 0 30px 0;
+    }
+
+    .list-inline {
+        padding-left: 10%;
+        margin-top: -22px;
+    }
+
+    .section-visa .col-lg-4,
+    .visa-type .col-lg-12 h3 {
+        margin-right: 0px;
+    }
+
+    .section-visa .row .col-lg-4 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .row-title {
+        margin-top: 50px;
+    }
+
+    .visa-type .col-lg-12 h3 {
+        font-size: 2rem;
+        margin-left: 10px;
+    }
+
+    .visa-type .col-lg-12 h3::after {
+        right: 41%;
+    }
+
+    .visa-type .container .row {
+        margin-top: 20px;
+    }
+
+    .immigrant-visa-wrapper .col-lg-4 {
+        margin-bottom: 12px;
+    }
+
+    .visa-type .steps-wrapper .col-lg-4,
+    .navbar-wrapper .container {
+        width: 100%;
+        margin: 0px;
+        flex-direction: row;
+        align-content: space-between;
+    }
+
+    .immigrant-visa-wrapper {
+        width: 75%;
+    }
+
+    .section-choose-visa .col-lg-6 {
+        margin-bottom: 10px;
+    }
+
+    .section-choose-country .row-title {
+        margin: 0;
+    }
+
+    .section-choose-country .read-more-wrapper {
+        margin-top: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid;
+    }
+
+    .section-mobile-app .col-lg-6 {
+        margin-bottom: 20px;
+        width: 80%;
+    }
+
+    .seaction-our-staffs .row-card .col-lg-3 {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    .row-card {
+        margin-bottom: 0;
+    }
+
+    .row-number {
+        height: 0;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 992px) {
+    .section-visa-type .visa-mission .row {
+        justify-content: start;
+        margin-left: 9%;
+    }
+
+    .sticky-wrapper {
+        margin-top: 10px;
+    }
+
+    .list-inline {
+        margin-left: 12%;
+    }
+
+    .header-content h1 {
+        margin-top: 95px;
+    }
+
+    .steps-wrapper {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .steps-wrapper .col-lg-4 {
+        width: 280px;
+        margin: 0px 10px 10px 0px;
+    }
+
+    .section-choose-country .read-more-wrapper {
+        margin: 22px 0 10px 10px;
+    }
+    .social-wrapper .navbar {
+        width: 200px;
+    }
+
+    .section-mobile-app .col-lg-6 {
+        margin-bottom: 20px;
+        width: 40%;
+    }
+
+    .seaction-our-staffs .row-card .col-lg-3 {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+}
+
+@media (min-width: 993px) {
+    .social-wrapper .navbar {
+        margin-left: 286px;
+    }
+}
