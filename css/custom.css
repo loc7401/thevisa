@@ -1,6 +1,6 @@
 #contact {
     width: 100vw;
-    background-color: #ffffff;
+    background-color: #050c3a;
 }
 
 #header {
@@ -215,7 +215,7 @@
 }
 
 .visa-type {
-    background-image: url(/assets/images/vecteezy_white-abstract-background-design_6655390.jpg);
+    background-image: url("../assets/images/vecteezy_white-abstract-background-design_6655390.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 720px;
@@ -306,7 +306,7 @@
 }
 
 .section-choose-visa .col-lg-6 {
-    background-image: url(/assets/images/blue.jpg);
+    background-image: url("../assets/images/blue.jpg");
     height: 450px;
     position: relative;
 }
@@ -344,7 +344,7 @@
 }
 
 .section-choose-country {
-    background-image: url(/assets/images/25097.jpg);
+    background-image: url("../assets/images/25097.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 600px;
@@ -413,7 +413,7 @@
 }
 
 .seaction-our-staffs {
-    background-image: url(/assets/images/—Pngtree—abstract\ dark\ blue\ gaming\ background_1281422.jpg);
+    background-image: url("../assets/images/—Pngtree—abstract\ dark\ blue\ gaming\ background_1281422.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 600px;
@@ -442,7 +442,7 @@
 }
 
 .row-number {
-    background-image: url(/assets/images/orange.jpg);
+    background-image: url("../assets/images/orange.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 200px;
@@ -453,7 +453,7 @@
 }
 
 .row-infor {
-    background-image: url(/assets/images/vecteezy_white-abstract-background-design_6655390.jpg);
+    background-image: url("../assets/images/vecteezy_white-abstract-background-design_6655390.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;
