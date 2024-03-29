@@ -1,13 +1,13 @@
 #contact {
     width: 100vw;
-    background-color: #0e0e56;
+    background-color: #cf1333;
 }
 
 #header {
     width: 100vw;
     height: 800px;
     background-image: linear-gradient(to left, rgb(124 59 0 / 61%), rgb(4 13 84 / 78%)),
-        url("/assets/images/para-08.jpg");
+        url("../assets/images/para-08.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
