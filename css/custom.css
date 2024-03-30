@@ -1,9 +1,9 @@
-#contact {
+.contact {
     width: 100vw;
     background-color: #050c3a;
 }
 
-#header {
+.header {
     width: 100vw;
     height: 800px;
     background-image: linear-gradient(to left, rgb(124 59 0 / 61%), rgb(4 13 84 / 78%)),
@@ -136,7 +136,7 @@
 .logo-wrapper img {
     width: 50px;
     height: 50px;
-    margin-right: 20px;
+    margin-right: 15px;
 }
 
 .text-wrapper {
@@ -353,7 +353,7 @@
 .section-choose-country .container-fluid,
 .section-mobile-app .container-fluid,
 .section-coach .container-fluid,
-.seaction-our-staffs .container-fluid,
+.section-our-staffs .container-fluid,
 .section-infor-partner .list-partner-wrapper,
 .row-mobile-app .col-lg-6,
 .section-infor-partner .list-partner,
@@ -412,18 +412,18 @@
     width: 40px;
 }
 
-.seaction-our-staffs {
+.section-our-staffs {
     background-image: url("../assets/images/—Pngtree—abstract\ dark\ blue\ gaming\ background_1281422.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 600px;
 }
 
-.seaction-our-staffs .separate {
+.section-our-staffs .separate {
     color: white;
 }
 
-.seaction-our-staffs .col-lg-12 {
+.section-our-staffs .col-lg-12 {
     margin-top: 50px;
 }
 
@@ -432,12 +432,12 @@
     max-width: 1140px;
 }
 
-.seaction-our-staffs .col-lg-12,
-.seaction-coach .container-fluid {
+.section-our-staffs .col-lg-12,
+.section-coach .container-fluid {
     margin-top: 100px;
 }
 
-.seaction-our-staffs .col-lg-3 {
+.section-our-staffs .col-lg-3 {
     max-width: 285px;
 }
 
@@ -499,6 +499,60 @@
 
 .text-infor p {
     font-size: 1.5rem;
+}
+
+.footer {
+    background-color: #040f59;
+    min-height: 400px;
+    width: 100vw;
+}
+
+.footer .row-footer {
+    padding: 65px 0;
+}
+
+.footer .container-fluid {
+    max-width: 1140px;
+}
+
+.footer h3,
+.footer p {
+    color: white;
+    font-size: 1rem;
+}
+
+.contact-footer {
+}
+
+.logo-footer,
+.logo-wrapper {
+    align-items: center;
+}
+
+.logo-footer i {
+    margin-right: 15px;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.logo-wrapper .text-wrapper h3 {
+    font-size: 2rem;
+}
+
+.logo-footer .text-wrapper p,
+.logo-footer .text-wrapper h3 {
+    font-size: 0.8rem;
+}
+
+.visa-item {
+    background-color: transparent;
+    color: white;
+    border: 0;
+    padding: 7px 0;
+}
+
+.visa-item i {
+    margin-right: 10px;
 }
 /* -------Rsponsive-------- */
 @media (max-width: 576px) {
@@ -612,7 +666,7 @@
         width: 80%;
     }
 
-    .seaction-our-staffs .row-card .col-lg-3 {
+    .section-our-staffs .row-card .col-lg-3 {
         display: flex;
         justify-content: center;
         margin-bottom: 30px;
@@ -625,12 +679,36 @@
     .row-number {
         height: 0;
     }
+
+    .section-our-staffs .col-lg-12,
+    .section-coach .row-title,
+    .section-coach .container-fluid {
+        margin: 0;
+    }
+
+    .section-our-staffs .row-card,
+    .section-coach .row-card .col-lg-4,
+    .section-infor-partner .row,
+    .section-choose-country .read-more-wrapper {
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section-coach .card {
+        margin-bottom: 10px;
+    }
+
+    .section-choose-country .col-lg-3 {
+        padding: 0 25px;
+    }
 }
 
 @media (min-width: 577px) and (max-width: 992px) {
     .section-visa-type .visa-mission .row {
+        align-items: center;
         justify-content: start;
-        margin-left: 9%;
     }
 
     .sticky-wrapper {
@@ -638,7 +716,11 @@
     }
 
     .list-inline {
-        margin-left: 12%;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        /* align-items: center; */
+        margin: 25px 0;
     }
 
     .header-content h1 {
@@ -667,10 +749,30 @@
         width: 40%;
     }
 
-    .seaction-our-staffs .row-card .col-lg-3 {
+    .section-our-staffs .row-card .col-lg-3 {
         display: flex;
         justify-content: center;
         margin-bottom: 50px;
+    }
+
+    .section-coach .row-card {
+        margin: 0;
+    }
+
+    .section-our-staffs .row-card,
+    .section-coach .row-card .col-lg-4,
+    .section-infor-partner .row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section-coach .card {
+        margin-bottom: 20px;
+    }
+
+    .section-coach .container-fluid {
+        margin: 0;
     }
 }
 
