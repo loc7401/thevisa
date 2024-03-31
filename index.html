@@ -19,13 +19,13 @@
     </head>
     <body>
         <div class="contact">
-            <div class="container" style="height: 50px">
+            <div class="container-fluid height-100">
                 <div class="row height-100">
-                    <div class="col-md-6 height-100">
-                        <div class="login-wrapper height-100">
+                    <div class="col-lg-6 col-md-6 col-login height-100">
+                        <!-- <div class="login-wrapper height-100">
                             <nav class="navbar navbar-expand-lg navbar-light height-100">
                                 <div
-                                    class="collapse navbar-collapse d-flex justify-content-center align-items-center height-100"
+                                    class="collapse navbar-collapse d-flex height-100"
                                     id="navbarSupportedContent"
                                 >
                                     <ul class="navbar-nav mr-auto mr-60px">
@@ -69,11 +69,71 @@
                                     </ul>
                                 </div>
                             </nav>
-                        </div>
+                        </div> -->
+                        <ul class="list-unstyled d-flex flex-wrap height-100">
+                            <li class="nav-item d-inline active">
+                                <a class="nav-link" href="#"
+                                    ><i class="fa-solid fa-right-to-bracket"></i>
+                                    Login /
+                                </a>
+                            </li>
+                            <li class="nav-item d-inline">
+                                <a class="nav-link" href="#">
+                                    <i class="fa-solid fa-user-plus"></i>
+                                    Create an account</a
+                                >
+                            </li>
+                            <li class="nav-item d-inline dropdown">
+                                <a
+                                    class="nav-link dropdown-toggle"
+                                    href="#"
+                                    id="navbarDropdown"
+                                    role="button"
+                                    data-toggle="dropdown"
+                                    aria-haspopup="true"
+                                    aria-expanded="false"
+                                >
+                                    <i class="fa-solid fa-earth-americas"></i>
+                                    English
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
 
-                    <div class="col-md-6 height-100">
-                        <div class="social-wrapper height-100">
+                    <div class="col-lg-6 col-md-6 col-callus height-100">
+                        <ul class="list-unstyled d-flex flex-wrap height-100">
+                            <li class="nav-item d-inline active">
+                                <a class="nav-link" href="#"
+                                    ><i class="fa-solid fa-right-to-bracket"></i>
+                                    Call us at: 1900-900-8899
+                                </a>
+                            </li>
+
+                            <li class="nav-item d-inline active">
+                                <a class="nav-link" href="#"
+                                    ><i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                            </li>
+
+                            <li class="nav-item d-inline active">
+                                <a class="nav-link" href="#"
+                                    ><i class="fa-brands fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item d-inline active">
+                                <a class="nav-link" href="#"
+                                    ><i class="fa-brands fa-google"></i>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <!-- <div class="social-wrapper height-100">
                             <nav class="navbar navbar-expand-lg navbar-light height-100">
                                 <div
                                     class="collapse navbar-collapse height-100"
@@ -106,7 +166,7 @@
                                     </ul>
                                 </div>
                             </nav>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -814,17 +874,17 @@
             </div>
         </section>
 
-        <section class="footer">
+        <footer class="footer">
             <div class="container-fluid">
                 <div class="row row-footer">
                     <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div class="logo-wrapper d-flex mb-2">
+                        <!-- <div class="logo-wrapper d-flex mb-2">
                             <img src="./assets/logos/logo 5_preview_rev_1.png" alt="" />
                             <div class="text-wrapper d-block">
                                 <h3>Eastend</h3>
                                 <p>VISA CONSULTING</p>
                             </div>
-                        </div>
+                        </div> -->
 
                         <p>There anyone who loves or pursues not some great to have pleasure.</p>
 
@@ -870,32 +930,102 @@
 
                     <div class="col-lg-3 col-md-6 col-sm-12">
                         <h3>RECENT NEWS</h3>
-                        <div class="wrap-news">
-                            <img src="" alt="" />
+                        <div class="wrap-news d-flex">
+                            <img src="./assets/images/para-08.jpg" alt="" />
                             <div class="text-news">
-                                <p>It is a long established fat that a reader</p>
+                                <p class="mb-0">It is a long established fat that a reader</p>
                                 <span>2 DAYS AGO</span>
                             </div>
                         </div>
 
-                        <div class="wrap-news">
-                            <img src="" alt="" />
+                        <div class="wrap-news d-flex">
+                            <img src="./assets/images/para-08.jpg" alt="" />
                             <div class="text-news">
-                                <p>It is a long established fat that a reader</p>
+                                <p class="mb-0">It is a long established fat that a reader</p>
                                 <span>2 DAYS AGO</span>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-lg-3 col-md-6 col-sm-12">
-                        <h3>VISA TYPES</h3>
+                        <h3>NEWSLETTER</h3>
                         <p>Sign up to our visa point to survey recent updates & offers.</p>
-                        <span>FOLLOW US:</span>
+
+                        <form>
+                            <div class="input-group mb-3">
+                                <input
+                                    type="email"
+                                    class="form-control"
+                                    placeholder="Enter your email"
+                                    aria-label="Enter your email"
+                                    aria-describedby="subscribe-btn"
+                                />
+                                <div class="input-group-append">
+                                    <button
+                                        class="btn btn-primary"
+                                        type="submit"
+                                        id="subscribe-btn"
+                                    >
+                                        Subscribe
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+
+                        <div class="follow-us">
+                            <span>FOLLOW US</span>
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </li>
+                                <li class="list-inline-item">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </li>
+                                <li class="list-inline-item">
+                                    <i class="fa-brands fa-google-plus-g"></i>
+                                </li>
+                                <li class="list-inline-item">
+                                    <i class="fa-brands fa-youtube"></i>
+                                </li>
+                                <li class="list-inline-item"><i class="fa-solid fa-rss"></i></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <div class="row"></div>
             </div>
-        </section>
+
+            <div class="row row-copyright">
+                <div class="container-fluid">
+                    <div class="row height-100">
+                        <div class="col-lg-6">&copy; 2018 Eastend. All Rights Reserved.</div>
+
+                        <div class="col-lg-6 col-policy">
+                            Private Policy / Terms & Conditions
+                            <div class="nav-item d-inline dropdown">
+                                <a
+                                    class="nav-link dropdown-toggle"
+                                    href="#"
+                                    id="navbarDropdown"
+                                    role="button"
+                                    data-toggle="dropdown"
+                                    aria-haspopup="true"
+                                    aria-expanded="false"
+                                >
+                                    <i class="fa-solid fa-earth-americas"></i>
+                                    English
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </body>

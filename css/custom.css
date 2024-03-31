@@ -1,5 +1,7 @@
-.contact {
+.contact,
+.row-copyright {
     width: 100vw;
+    height: 50px;
     background-color: #050c3a;
 }
 
@@ -38,47 +40,29 @@
     font-size: 1rem;
 }
 
-.login-wrapper .nav-link,
-.social-wrapper .nav-link {
-    color: white;
-    display: block;
-    height: 100%;
+.contact .col-lg-6 {
     font-size: 0.8rem;
-    text-wrap: nowrap;
 }
 
-.login-wrapper li:last-child {
-    margin-left: 20px;
+.col-callus .list-unstyled {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    color: white;
 }
 
-.login-wrapper li:last-child::before {
-    content: "";
-    display: inline-block;
-    top: 35%;
-    left: -10%;
-    width: 1px;
-    height: 14px;
-    background-color: #fff;
-    position: absolute;
+.col-login .list-unstyled {
+    display: flex;
+    align-items: center;
+    color: white;
 }
 
-.login-wrapper i {
-    margin-right: 5px;
+.col-callus .list-unstyled li {
+    margin-right: 14px;
 }
 
-.social-wrapper li:first-child {
-    margin-right: 20px;
-}
-
-.social-wrapper li:first-child::before {
-    content: "";
-    display: inline-block;
-    top: 35%;
-    right: 26%;
-    width: 1px;
-    height: 14px;
-    background-color: #fff;
-    position: absolute;
+.col-login .list-unstyled li {
+    margin-right: 14px;
 }
 
 .navbar-wrapper {
@@ -120,6 +104,9 @@
 .page-list li:last-child {
     background-color: var(--primary-color);
     border-radius: 4px;
+}
+
+.contact .col-callus {
 }
 
 .logo-company h3 {
@@ -356,8 +343,9 @@
 .section-our-staffs .container-fluid,
 .section-infor-partner .list-partner-wrapper,
 .row-mobile-app .col-lg-6,
-.section-infor-partner .list-partner,
+/* .section-infor-partner .list-partner, */
 .row-infor {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -372,7 +360,8 @@
 }
 
 .row-country,
-.row-mobile-app {
+.row-mobile-app,
+.contact .container-fluid {
     max-width: 1140px;
 }
 
@@ -521,6 +510,10 @@
     font-size: 1rem;
 }
 
+.footer .input-group-append button {
+    background-color: var(--primary-color);
+}
+
 .contact-footer {
 }
 
@@ -544,6 +537,10 @@
     font-size: 0.8rem;
 }
 
+.visa-list {
+    margin-top: 15px;
+}
+
 .visa-item {
     background-color: transparent;
     color: white;
@@ -554,9 +551,57 @@
 .visa-item i {
     margin-right: 10px;
 }
+
+.row-footer .wrap-news {
+    margin-top: 25px;
+}
+
+.row-footer .col-lg-3:last-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.wrap-news .text-news span {
+    color: var(--primary-color);
+    font-size: 0.8rem;
+}
+
+.row-footer .wrap-news img {
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
+    margin-right: 14px;
+}
+
+.follow-us {
+    display: flex;
+    color: white;
+}
+
+.follow-us span {
+    margin-right: 10px;
+}
+
+.footer .col-policy,
+.contact .social-wrapper .collapse {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.footer .container-fluid .col-lg-6 {
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.footer .col-policy .nav-item {
+    margin-left: 40px;
+}
 /* -------Rsponsive-------- */
 @media (max-width: 576px) {
-    #contact {
+    .contact {
         display: none;
     }
 
@@ -597,7 +642,7 @@
         padding: 22px 0 30px 0;
     }
 
-    .list-inline {
+    .header .row .list-inline {
         padding-left: 10%;
         margin-top: -22px;
     }
@@ -703,6 +748,9 @@
     .section-choose-country .col-lg-3 {
         padding: 0 25px;
     }
+    .row-footer .col-lg-3 {
+        margin-bottom: 30px;
+    }
 }
 
 @media (min-width: 577px) and (max-width: 992px) {
@@ -774,10 +822,12 @@
     .section-coach .container-fluid {
         margin: 0;
     }
+    .footer .follow-us .list-inline {
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+    }
 }
 
 @media (min-width: 993px) {
-    .social-wrapper .navbar {
-        margin-left: 286px;
-    }
 }
