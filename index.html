@@ -14,7 +14,7 @@
             rel="stylesheet"
         />
 
-        <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" /> -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
         <link href="./css/index.css" rel="stylesheet" />
         <link href="./css/custom.css" rel="stylesheet" />
@@ -295,8 +295,8 @@
             <div class="container-fluid">
                 <div class="row visa-mission py-5">
                     <div class="container">
-                        <div class="row d-flex">
-                            <div class="col-lg-4 col-md-4" data-aos="fade-right">
+                        <div class="row d-flex" data-aos="fade-up-right">
+                            <div class="col-lg-4 col-md-4">
                                 <div class="our-visa-wrapper">
                                     <img src="./assets/logos/school_11149777.png" alt="" />
                                 </div>
@@ -309,7 +309,7 @@
                                 </p>
                             </div>
 
-                            <div class="col-lg-4 col-md-4" data-aos="fade-up">
+                            <div class="col-lg-4 col-md-4">
                                 <div class="our-visa-wrapper">
                                     <img src="./assets/logos/risk-management_14677086.png" alt="" />
                                 </div>
@@ -322,7 +322,7 @@
                                 </p>
                             </div>
 
-                            <div class="col-lg-4 col-md-4" data-aos="fade-left">
+                            <div class="col-lg-4 col-md-4">
                                 <div class="our-visa-wrapper">
                                     <img src="./assets/logos/goals_8103857.png" alt="" />
                                 </div>
@@ -351,6 +351,8 @@
                         <div
                             class="row immigrant-wrapper d-flex justify-content-center align-items-center"
                             data-aos="flip-left"
+                            data-aos-easing="ease-out-cubic"
+                            data-aos-duration="2000"
                         >
                             <div class="col-lg-4">
                                 <div class="read-more-wrapper">
@@ -387,7 +389,8 @@
 
                         <div
                             class="row steps-wrapper d-flex justify-content-center align-items-center"
-                            data-aos="fade-up-left"
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="center-bottom"
                         >
                             <div class="col-lg-4 d-flex justify-content-center align-items-center">
                                 <i class="fa-solid fa-list-check"></i>
@@ -420,10 +423,15 @@
 
         <section class="section-choose-visa">
             <div class="container-fluid">
-                <div class="row">
+                <div
+                    class="row"
+                    data-aos="fade-zoom-in"
+                    data-aos-easing="ease-in-back"
+                    data-aos-delay="300"
+                    data-aos-offset="0"
+                >
                     <div
                         class="col-lg-6 col-sm-12 d-flex justify-content-center align-items-center"
-                        data-aos="flip-up"
                     >
                         <div class="immigrant-visa-wrapper">
                             <img src="./assets/logos/school_11149777.png" alt="" />
@@ -440,26 +448,6 @@
 
                     <div
                         class="col-lg-6 col-sm-12 d-flex justify-content-center align-items-center"
-                        data-aos="flip-up"
-                    >
-                        <div class="immigrant-visa-wrapper">
-                            <img src="./assets/logos/school_11149777.png" alt="" />
-                            <h4>Non-Immigrant Visa</h4>
-                            <p>
-                                The anyone who loves or pursure nor desires to obtain of itself, bet
-                                it is pain, but because occasionally can pack-ages as their dafault.
-                            </p>
-                            <a href="" class="text-read-more-white"
-                                >READ MORE <i class="fa-solid fa-arrow-right color-primary"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div
-                        class="col-lg-6 col-sm-12 d-flex justify-content-center align-items-center"
-                        data-aos="flip-down"
                     >
                         <div class="immigrant-visa-wrapper">
                             <img src="./assets/logos/school_11149777.png" alt="" />
@@ -476,7 +464,22 @@
 
                     <div
                         class="col-lg-6 col-sm-12 d-flex justify-content-center align-items-center"
-                        data-aos="flip-down"
+                    >
+                        <div class="immigrant-visa-wrapper">
+                            <img src="./assets/logos/school_11149777.png" alt="" />
+                            <h4>Non-Immigrant Visa</h4>
+                            <p>
+                                The anyone who loves or pursure nor desires to obtain of itself, bet
+                                it is pain, but because occasionally can pack-ages as their dafault.
+                            </p>
+                            <a href="" class="text-read-more-white"
+                                >READ MORE <i class="fa-solid fa-arrow-right color-primary"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div
+                        class="col-lg-6 col-sm-12 d-flex justify-content-center align-items-center"
                     >
                         <div class="immigrant-visa-wrapper">
                             <img src="./assets/logos/school_11149777.png" alt="" />
@@ -504,8 +507,13 @@
                     </div>
                 </div>
 
-                <div class="row row-country d-flex mt-5" data-aos="zoom-out">
-                    <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="row row-country d-flex mt-5">
+                    <div
+                        class="col-lg-3 col-md-6 col-sm-12"
+                        data-aos="flip-left"
+                        data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000"
+                    >
                         <div class="read-more-wrapper">
                             <img src="./assets/logos/school_11149777.png" alt="" />
                             <h4>United States</h4>
@@ -518,7 +526,12 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div
+                        class="col-lg-3 col-md-6 col-sm-12"
+                        data-aos="flip-left"
+                        data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000"
+                    >
                         <div class="read-more-wrapper">
                             <img src="./assets/logos/school_11149777.png" alt="" />
                             <h4>United States</h4>
@@ -531,7 +544,12 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div
+                        class="col-lg-3 col-md-6 col-sm-12"
+                        data-aos="flip-left"
+                        data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000"
+                    >
                         <div class="read-more-wrapper">
                             <img src="./assets/logos/school_11149777.png" alt="" />
                             <h4>United States</h4>
@@ -544,7 +562,12 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div
+                        class="col-lg-3 col-md-6 col-sm-12"
+                        data-aos="flip-left"
+                        data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000"
+                    >
                         <div class="read-more-wrapper">
                             <img src="./assets/logos/school_11149777.png" alt="" />
                             <h4>United States</h4>
@@ -630,7 +653,7 @@
                 </div>
 
                 <div class="row row-card mt-3 py-5">
-                    <div class="col-lg-3 col-md-6 col-sm-12" data-aos="zoom-out-left">
+                    <div class="col-lg-3 col-md-6 col-sm-12" data-aos="zoom-out-right">
                         <div class="card">
                             <img
                                 class="card-img-top"
@@ -658,7 +681,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-6 col-sm-12" data-aos="zoom-out-left">
+                    <div class="col-lg-3 col-md-6 col-sm-12" data-aos="zoom-out-right">
                         <div class="card">
                             <img
                                 class="card-img-top"
@@ -686,7 +709,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-6 col-sm-12" data-aos="zoom-out-left">
+                    <div class="col-lg-3 col-md-6 col-sm-12" data-aos="zoom-out-right">
                         <div class="card">
                             <img
                                 class="card-img-top"
@@ -714,7 +737,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-6 col-sm-12" data-aos="zoom-out-left">
+                    <div class="col-lg-3 col-md-6 col-sm-12" data-aos="zoom-out-right">
                         <div class="card">
                             <img
                                 class="card-img-top"
@@ -757,7 +780,12 @@
                 </div>
 
                 <div class="row row-card mt-1 py-5">
-                    <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div
+                        class="col-lg-4 col-md-6 col-sm-12"
+                        data-aos="fade-down"
+                        data-aos-easing="linear"
+                        data-aos-duration="1500"
+                    >
                         <div class="card">
                             <img
                                 class="card-img-top"
@@ -775,7 +803,12 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div
+                        class="col-lg-4 col-md-6 col-sm-12"
+                        data-aos="fade-down"
+                        data-aos-easing="linear"
+                        data-aos-duration="1500"
+                    >
                         <div class="card">
                             <img
                                 class="card-img-top"
@@ -793,7 +826,12 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div
+                        class="col-lg-4 col-md-6 col-sm-12"
+                        data-aos="fade-down"
+                        data-aos-easing="linear"
+                        data-aos-duration="1500"
+                    >
                         <div class="card">
                             <img
                                 class="card-img-top"
@@ -839,25 +877,45 @@
 
                     <div class="container-fluid list-partner py-4 mt-4">
                         <div class="row">
-                            <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div
+                                class="col-lg-3 col-md-6 col-sm-12"
+                                data-aos="flip-left"
+                                data-aos-easing="ease-out-cubic"
+                                data-aos-duration="2000"
+                            >
                                 <div class="item-partner-wrapper">
                                     <i class="fa-solid fa-gift"></i>NOMANT
                                 </div>
                             </div>
 
-                            <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div
+                                class="col-lg-3 col-md-6 col-sm-12"
+                                data-aos="flip-left"
+                                data-aos-easing="ease-out-cubic"
+                                data-aos-duration="2000"
+                            >
                                 <div class="item-partner-wrapper">
                                     <i class="fa-solid fa-gift"></i>NOMANT
                                 </div>
                             </div>
 
-                            <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div
+                                class="col-lg-3 col-md-6 col-sm-12"
+                                data-aos="flip-left"
+                                data-aos-easing="ease-out-cubic"
+                                data-aos-duration="2000"
+                            >
                                 <div class="item-partner-wrapper">
                                     <i class="fa-solid fa-gift"></i>NOMANT
                                 </div>
                             </div>
 
-                            <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div
+                                class="col-lg-3 col-md-6 col-sm-12"
+                                data-aos="flip-left"
+                                data-aos-easing="ease-out-cubic"
+                                data-aos-duration="2000"
+                            >
                                 <div class="item-partner-wrapper">
                                     <i class="fa-solid fa-gift"></i>NOMANT
                                 </div>
@@ -865,25 +923,45 @@
                         </div>
 
                         <div class="row">
-                            <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div
+                                class="col-lg-3 col-md-6 col-sm-12"
+                                data-aos="flip-left"
+                                data-aos-easing="ease-out-cubic"
+                                data-aos-duration="2000"
+                            >
                                 <div class="item-partner-wrapper">
                                     <i class="fa-solid fa-gift"></i>NOMANT
                                 </div>
                             </div>
 
-                            <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div
+                                class="col-lg-3 col-md-6 col-sm-12"
+                                data-aos="flip-left"
+                                data-aos-easing="ease-out-cubic"
+                                data-aos-duration="2000"
+                            >
                                 <div class="item-partner-wrapper">
                                     <i class="fa-solid fa-gift"></i>NOMANT
                                 </div>
                             </div>
 
-                            <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div
+                                class="col-lg-3 col-md-6 col-sm-12"
+                                data-aos="flip-left"
+                                data-aos-easing="ease-out-cubic"
+                                data-aos-duration="2000"
+                            >
                                 <div class="item-partner-wrapper">
                                     <i class="fa-solid fa-gift"></i>NOMANT
                                 </div>
                             </div>
 
-                            <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div
+                                class="col-lg-3 col-md-6 col-sm-12"
+                                data-aos="flip-left"
+                                data-aos-easing="ease-out-cubic"
+                                data-aos-duration="2000"
+                            >
                                 <div class="item-partner-wrapper">
                                     <i class="fa-solid fa-gift"></i>NOMANT
                                 </div>
