@@ -1,0 +1,70 @@
+.button {
+    position: fixed;
+    bottom: 2em;
+    right: 1em;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #227ebb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button i {
+    font-size: 2rem;
+    color: white;
+}
+
+.popup {
+    position: fixed;
+    bottom: 6em;
+    right: 5em;
+    background-color: #fff;
+    padding: 20px 26px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    display: none;
+    border-radius: 20px 20px 0px 20px;
+
+    transform-origin: calc(100% - 10px) bottom;
+    animation: header__notify-fadeIn ease-in 0.4s;
+}
+
+@keyframes header__notify-fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: flex;
+    align-items: center;
+}
+
+.popup-content {
+    text-align: center;
+}
+
+.popup-content h2,
+.popup-content p {
+    margin: 0;
+    font-size: 1.4rem;
+}
+
+.image {
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+}
+
+.change-color {
+    background-color: #184d99; /* Màu xanh dương */
+}
