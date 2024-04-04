@@ -2,31 +2,62 @@
     position: fixed;
     bottom: 2em;
     right: 1em;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     background-color: #227ebb;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+.button:hover {
+    cursor: pointer;
+}
+
 .button i {
-    font-size: 2rem;
+    font-size: 1.4rem;
     color: white;
 }
 
 .popup {
     position: fixed;
     bottom: 6em;
-    right: 5em;
+    right: 2em;
     background-color: #fff;
-    padding: 20px 26px;
+    padding: 24px 24px;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
     display: none;
-    border-radius: 20px 20px 0px 20px;
-
+    border-radius: 20px;
     transform-origin: calc(100% - 10px) bottom;
     animation: header__notify-fadeIn ease-in 0.4s;
+    width: 370px;
+    min-height: 485px;
+    z-index: 9999;
+}
+
+.infor-form {
+    position: fixed;
+    bottom: 6em;
+    right: 2em;
+    background-color: #fff;
+    padding: 24px 24px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    display: none;
+    border-radius: 20px;
+    /* transform-origin: calc(100% - 10px) bottom; */
+    animation: header__notify-fadeIn ease-in 0.2s;
+    width: 370px;
+    height: 250px;
+    z-index: 9999;
+}
+
+.popup-content {
+    background-color: white;
+    max-width: 230px;
+    min-height: 62px;
+    border-radius: 20px 20px 20px 0;
+    padding: 10px;
 }
 
 @keyframes header__notify-fadeIn {
@@ -46,25 +77,110 @@
 
 .visible {
     display: flex;
+}
+
+.popup-wrapper {
+    width: 100%;
+}
+
+.popup-wrapper h3 {
+    text-align: center;
+    margin-top: 0px;
+}
+
+.popup-content p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.chat-content {
+    background-color: #4bb74b;
+    min-height: 250px;
+    border-radius: 10px;
+}
+
+.hidden-div {
+    flex-direction: column;
     align-items: center;
 }
 
-.popup-content {
-    text-align: center;
+.hidden-div .message-wrapper {
+    margin-top: -12px;
+    align-items: flex-end;
 }
 
-.popup-content h2,
-.popup-content p {
-    margin: 0;
-    font-size: 1.4rem;
+.hidden-div .form-control {
+    margin-bottom: 10px;
 }
 
-.image {
-    width: 70px;
-    height: 70px;
-    margin-right: 10px;
+.hidden-div .card-body {
+    margin-left: 39px;
+    padding-bottom: 10px;
 }
+
+.message-wrapper {
+    border-radius: 20px;
+    /* height: 170px; */
+    padding: 15px;
+}
+
+.message-wrapper .image {
+    width: 55px;
+    height: 55px;
+    margin: 10px 6px 0 0;
+    border-radius: 50%;
+}
+
+/* .message-wrapper .image::before {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 3px;
+    height: 3px;
+    background-color: green;
+    border-radius: 50%;
+    top: 0px;
+} */
 
 .change-color {
-    background-color: #184d99; /* Màu xanh dương */
+    background-color: #184d99;
+}
+
+.chat-box {
+    flex-direction: column;
+}
+
+.popup .btn {
+    width: 100%;
+    height: 62px;
+    border-radius: 3px;
+    font-size: 1.4rem;
+    bottom: 5px;
+    background-color: var(--primary-color);
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-send {
+    padding: 5px 10px;
+    border: 0;
+    border-radius: 3px;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.icon-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon-wrapper i {
+    background-color: #e0e5e5;
+    padding: 8px;
+    border-radius: 50%;
+}
+@media (max-width: 576px) {
+    .popup {
+        right: 1em;
+    }
 }

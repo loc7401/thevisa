@@ -981,7 +981,7 @@
     background: gainsboro;
     display: flex;
 } */
-.title {
+/* .title {
     margin: auto;
     font-size: x-large;
     font-family: Raleway, sans-serif;
@@ -1149,4 +1149,4 @@
 
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
-}
+} */
