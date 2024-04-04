@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Visa</title>
+        <title>Document</title>
 
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
@@ -13,12 +13,11 @@
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
             rel="stylesheet"
         />
-
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
         <link href="./css/index.css" rel="stylesheet" />
         <link href="./css/custom.css" rel="stylesheet" />
-        <link href="./css/test.css" rel="stylesheet" />
+        <link href="./css/chatbox.css" rel="stylesheet" />
     </head>
     <body>
         <div class="contact">
@@ -150,7 +149,7 @@
                     >
                         <div class="container">
                             <div class="d-flex">
-                                <a href="#">
+                                <a href="/number.html">
                                     <img
                                         src="./assets/logos/logo 5_preview_rev_1.png"
                                         alt=""
@@ -766,7 +765,60 @@
                     </div>
                 </div>
             </div>
-            <div class="row row-number"></div>
+        </section>
+
+        <section class="section-number-counter">
+            <div class="container-fluid d-flex">
+                <div class="row row-number d-flex height-100" id="counter">
+                    <div class="col-lg-2 col-md-4 col-sm-6">
+                        <div class="number-with-plus d-flex">
+                            <div class="counter-value" data-count="2000">0</div>
+                            <span>+</span>
+                        </div>
+                        <span class="number-title"> Happy Clients </span>
+                    </div>
+
+                    <div class="col-lg-2 col-md-4 col-sm-6">
+                        <div class="number-with-plus d-flex">
+                            <div class="counter-value" data-count="100">0</div>
+                            <span>%</span>
+                        </div>
+                        <span class="number-title"> Satisfaction </span>
+                    </div>
+
+                    <div class="col-lg-2 col-md-4 col-sm-6">
+                        <div class="number-with-plus d-flex">
+                            <div class="counter-value" data-count="4.5">0</div>
+                            <span>&#10032;</span>
+                        </div>
+                        <span class="number-title"> Reviews </span>
+                    </div>
+
+                    <div class="col-lg-2 col-md-4 col-sm-6">
+                        <div class="number-with-plus d-flex">
+                            <div class="counter-value" data-count="55">0</div>
+                            <span></span>
+                        </div>
+                        <span class="number-title"> Countries </span>
+                    </div>
+
+                    <div class="col-lg-2 col-md-4 col-sm-6">
+                        <div class="number-with-plus d-flex">
+                            <div class="counter-value" data-count="700">0</div>
+                            <span>+</span>
+                        </div>
+                        <span class="number-title"> Students </span>
+                    </div>
+
+                    <div class="col-lg-2 col-md-4 col-sm-6">
+                        <div class="number-with-plus d-flex">
+                            <div class="counter-value" data-count="180">0</div>
+                            <span>+</span>
+                        </div>
+                        <span class="number-title"> Universities </span>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section class="section-coach">
@@ -1129,9 +1181,113 @@
             </div>
         </footer>
 
+        <!-- <section class="chatbox1">
+            <div id="chatbot" class="main-card collapsed1 position-fixed">
+                <button id="chatbot_toggle" class="d-flex">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M0 0h24v24H0V0z" fill="none" />
+                        <path
+                            d="M15 4v7H5.17l-.59.59-.58.58V4h11m1-2H3c-.55 0-1 .45-1 1v14l4-4h10c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm5 4h-2v9H6v2c0 .55.45 1 1 1h11l4 4V7c0-.55-.45-1-1-1z"
+                        />
+                    </svg>
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        style="display: none"
+                    >
+                        <path d="M0 0h24v24H0V0z" fill="none" />
+                        <path
+                            d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"
+                        />
+                    </svg>
+                </button>
+                <div class="main-title">
+                    <div>
+                        <svg viewBox="0 0 640 512" title="robot">
+                            <path
+                                fill="currentColor"
+                                d="M32,224H64V416H32A31.96166,31.96166,0,0,1,0,384V256A31.96166,31.96166,0,0,1,32,224Zm512-48V448a64.06328,64.06328,0,0,1-64,64H160a64.06328,64.06328,0,0,1-64-64V176a79.974,79.974,0,0,1,80-80H288V32a32,32,0,0,1,64,0V96H464A79.974,79.974,0,0,1,544,176ZM264,256a40,40,0,1,0-40,40A39.997,39.997,0,0,0,264,256Zm-8,128H192v32h64Zm96,0H288v32h64ZM456,256a40,40,0,1,0-40,40A39.997,39.997,0,0,0,456,256Zm-8,128H384v32h64ZM640,256V384a31.96166,31.96166,0,0,1-32,32H576V224h32A31.96166,31.96166,0,0,1,640,256Z"
+                            />
+                        </svg>
+                    </div>
+                    <span>Chatbot</span>
+                </div>
+                <div class="chat-area" id="message-box"></div>
+                <div class="line"></div>
+
+                <div class="input-div">
+                    <input
+                        class="input-message"
+                        name="message"
+                        type="text"
+                        id="message"
+                        placeholder="Type your message ..."
+                    />
+                    <button class="input-send" onclick="send()">
+                        <svg style="width: 24px; height: 24px">
+                            <path d="M2,21L23,12L2,3V10L17,12L2,14V21Z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section> -->
+
+        <!-- <div class="chat-box">
+            <div class="button" id="showPopupButton">
+                <i class="message-icon fa-solid fa-comments"></i>
+            </div>
+
+            <div id="popup" class="popup hidden">
+                <img class="image" src="./assets/images/2289_SkVNQSBGQU1PIDEwMjgtMTE2.jpg" />
+
+                <div class="popup-content">
+                    <h2>Bạn muốn được tư vấn thêm?</h2>
+                    <a href="#">Bấm vào đây để liên hệ với chúng tôi.</a>
+                </div>
+            </div>
+        </div> -->
+
+        <div class="chat-box">
+            <div class="button" id="showPopupButton">
+                <i class="message-icon fa-solid fa-comments"></i>
+            </div>
+
+            <div id="popup" class="popup hidden">
+                <img class="image" src="./assets/images/2289_SkVNQSBGQU1PIDEwMjgtMTE2.jpg" />
+
+                <div class="popup-content">
+                    <h2>Bạn muốn được tư vấn thêm?</h2>
+                    <a href="#">Bấm vào đây để liên hệ với chúng tôi.</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <div class="video-main">
+                <div class="promo-video">
+                    <div class="waves-block">
+                        <div class="waves wave-1"></div>
+                        <div class="waves wave-2"></div>
+                        <div class="waves wave-3"></div>
+                    </div>
+                </div>
+                <a
+                    href="https://www.youtube.com/watch?v=BqI0Q7e4kbk"
+                    class="video video-popup mfp-iframe"
+                    data-lity
+                    ><i class="fa fa-play"></i
+                ></a>
+            </div>
+        </div>
+
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <script src="./js/main.js"></script>
+        <script src="./js/chatbox.js"></script>
 
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
