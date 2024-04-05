@@ -1,5 +1,5 @@
-var button = document.getElementById("showPopupButton");
-var btnChat = document.getElementById("start-chat-btn");
+var toggleButton = document.getElementById("showPopupButton");
+var btnStartChat = document.getElementById("start-chat-btn");
 var btnSend = document.getElementById("btn-send");
 var btnClose = document.getElementById("close-btn");
 
@@ -9,8 +9,9 @@ var popup = document.getElementById("popup");
 var helloMess = document.getElementById("hello-mess");
 var newMess = document.getElementById("new-mess");
 var thanksMess = document.getElementById("thanks-mess");
+var goodDayMess = document.getElementById("good-mess");
 
-button.addEventListener("click", function () {
+toggleButton.addEventListener("click", function () {
     setTimeout(() => {
         helloMess.classList.remove("hidden");
         helloMess.classList.add("visible");
@@ -26,15 +27,18 @@ button.addEventListener("click", function () {
 
     if (popup.classList.contains("visible")) {
         setTimeout(() => {
-            button.innerHTML = '<i class="fa-solid fa-xmark"></i>';
-            button.classList.add("change-color");
+            toggleButton.innerHTML = '<i class="fa-solid fa-xmark"></i>';
+            toggleButton.classList.add("change-color");
         }, 400);
     } else {
-        button.innerHTML = '<i class="message-icon fa-solid fa-comments"></i>';
-        button.classList.remove("change-color");
+        toggleButton.innerHTML = '<i class="message-icon fa-solid fa-comments"></i>';
+        toggleButton.classList.remove("change-color");
     }
 
-    if (thanksMess.classList.contains("visible")) {
+    if (goodDayMess.classList.contains("visible")) {
+        goodDayMess.classList.remove("visible");
+        goodDayMess.classList.add("hidden");
+
         thanksMess.classList.remove("visible");
         thanksMess.classList.add("hidden");
 
@@ -43,28 +47,25 @@ button.addEventListener("click", function () {
     }
 
     if (newMess.classList.contains("hidden")) {
-        btnChat.classList.remove("hidden");
-        btnChat.classList.add("visible");
+        btnStartChat.classList.remove("hidden");
+        btnStartChat.classList.add("visible");
     }
-
-    // if (popup.classList.contains("popup-mini")) {
-    //     popup.classList.remove("popup-mini");
-    // }
 });
 
-btnChat.addEventListener("click", function () {
+btnStartChat.addEventListener("click", function () {
     if (newMess.classList.contains("hidden")) {
         setTimeout(() => {
             newMess.classList.remove("hidden");
             newMess.classList.add("visible");
-            btnChat.classList.add("hidden");
-        }, 1000);
+
+            btnStartChat.classList.add("hidden");
+        }, 600);
     }
 
-    if (btnChat.classList.contains("visible")) {
+    if (btnStartChat.classList.contains("visible")) {
         setTimeout(() => {
-            btnChat.classList.remove("visible");
-            btnChat.classList.add("hidden");
+            btnStartChat.classList.remove("visible");
+            btnStartChat.classList.add("hidden");
         }, 400);
     }
 
@@ -77,31 +78,29 @@ btnChat.addEventListener("click", function () {
 });
 
 btnSend.addEventListener("click", function () {
-    // if (newMess.classList.contains("visible")) {
-    //     newMess.classList.remove("visible");
-    //     newMess.classList.add("hidden");
+    if (thanksMess.classList.contains("hidden")) {
+        setTimeout(() => {
+            thanksMess.classList.remove("hidden");
+            thanksMess.classList.add("visible");
+            chatContent.scrollTop = chatContent.scrollHeight;
+            setTimeout(() => {
+                goodDayMess.classList.add("visible");
+                chatContent.scrollTop = chatContent.scrollHeight;
+            }, 1000);
+        }, 2000);
+    } else {
+        thanksMess.classList.add("");
+    }
 
-    // btnChat.classList.remove("hidden");
-    // btnChat.classList.add("visible");
-
-    setTimeout(() => {
-        thanksMess.classList.remove("hidden");
-        thanksMess.classList.add("visible");
-        chatContent.scrollTop = chatContent.scrollHeight;
-    }, 2000);
-
-    btnChat.classList.remove("visible");
-    btnChat.classList.add("hidden");
-
-    // popup.classList.add("popup-mini");
-    // }
-
-    // thanksMess.classList.remove("hidden");
-    // thanksMess.classList.add("visible");
+    btnStartChat.classList.remove("visible");
+    btnStartChat.classList.add("hidden");
 });
 
 btnClose.addEventListener("click", function () {
-    if (thanksMess.classList.contains("visible")) {
+    if (goodDayMess.classList.contains("visible")) {
+        goodDayMess.classList.remove("visible");
+        goodDayMess.classList.add("hidden");
+
         thanksMess.classList.remove("visible");
         thanksMess.classList.add("hidden");
 
@@ -109,15 +108,8 @@ btnClose.addEventListener("click", function () {
         newMess.classList.add("hidden");
     }
 
-    if (popup.classList.contains("popup-mini")) {
-        popup.classList.remove("popup-mini");
-    }
-
     popup.classList.remove("visible");
     popup.classList.add("hidden");
 
-    button.innerHTML = '<i class="message-icon fa-solid fa-comments"></i>';
-
-    thanksMess.classList.remove("visible");
-    thanksMess.classList.add("hidden");
+    toggleButton.innerHTML = '<i class="message-icon fa-solid fa-comments"></i>';
 });
