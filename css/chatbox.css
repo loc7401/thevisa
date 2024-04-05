@@ -13,7 +13,7 @@
 
 .button:hover {
     cursor: pointer;
-    /* opacity: 0.8; */
+    opacity: 0.8;
 }
 
 .button i {
@@ -26,14 +26,14 @@
     bottom: 6em;
     right: 2em;
     background-color: #fff;
-    padding: 24px 24px;
+    padding: 12px 12px 24px 24px;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
     display: none;
     border-radius: 8px;
     transform-origin: calc(100% - 10px) bottom;
     animation: header__notify-fadeIn ease-in 0.3s;
     width: 370px;
-    min-height: 550px;
+    height: 465px;
     z-index: 9999;
 }
 
@@ -78,10 +78,15 @@
 
 .visible {
     display: flex;
+    justify-content: center;
 }
 
 .popup-wrapper {
     width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .popup-wrapper h3 {
@@ -97,8 +102,15 @@
 
 .chat-content {
     background-color: white;
-    min-height: 250px;
-    border-radius: 10px;
+    height: 275px;
+    min-width: 322px;
+    /* border-radius: 10px; */
+    overflow-y: auto;
+    scrollbar-width: thin;
+    /* padding-bottom: 40px; */
+    border-top: 1px solid #dee2e6;
+    border-left: 1px solid #e9ecef;
+    border-bottom: 1px solid #e9ecef;
 }
 
 .hidden-div {
@@ -116,14 +128,17 @@
 }
 
 .hidden-div .card-body {
-    margin-left: 39px;
+    margin-left: 62px;
     padding-bottom: 10px;
+    border: 1px solid #adb5bd;
+    border-radius: 5px;
+    padding: 10px;
 }
 
 .message-wrapper {
     border-radius: 20px;
-    /* height: 170px; */
     padding: 15px;
+    align-items: flex-end;
 }
 
 .message-wrapper .image {
@@ -153,14 +168,15 @@
 }
 
 .popup .btn {
-    width: 100%;
-    height: 62px;
+    width: 140px;
+    height: 40px;
     border-radius: 3px;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     bottom: 5px;
     background-color: var(--primary-color);
     justify-content: center;
     align-items: center;
+    margin-bottom: 12px;
 }
 
 .popup .btn:hover {
@@ -179,18 +195,25 @@
     color: white;
 }
 
+.btn-send:active {
+    opacity: 0.6;
+}
+
 .card-body .form {
     padding-bottom: 10px;
 }
 
 .icon-wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
+    width: 100%;
 }
 
 .icon-wrapper i {
     background-color: #e0e5e5;
     padding: 8px;
+    margin-left: 8px;
+    margin-bottom: 8px;
     border-radius: 50%;
     width: 30px;
     height: 30px;
@@ -199,6 +222,10 @@
 .icon-wrapper i:hover {
     cursor: pointer;
     opacity: 0.8;
+}
+
+.popup-mini {
+    height: 385px;
 }
 
 @media (max-width: 576px) {

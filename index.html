@@ -1204,8 +1204,8 @@
 
                     <h3>Chat với chúng tôi!</h3>
 
-                    <div class="chat-content mt-4">
-                        <div class="message-wrapper d-flex">
+                    <div id="chat-content" class="chat-content mt-4">
+                        <div id="hello-mess" class="message-wrapper hidden">
                             <img
                                 class="image position-relative"
                                 src="./assets/images/—Pngtree—virtual assistant in flat style_15101143.png"
@@ -1238,7 +1238,7 @@
                                 </h5>
                                 <form class="form">
                                     <div class="form-group">
-                                        <label for="name">Tên:</label>
+                                        <label for="name">Họ tên:</label>
                                         <input
                                             type="text"
                                             class="form-control"
@@ -1265,19 +1265,31 @@
                                 </form>
                             </div>
                         </div>
+
+                        <div id="thanks-mess" class="message-wrapper hidden">
+                            <img
+                                class="image position-relative"
+                                src="./assets/images/—Pngtree—virtual assistant in flat style_15101143.png"
+                            />
+
+                            <div class="popup-content">
+                                <p>
+                                    Thông tin của quý khách đã được lưu lại, chúng tôi sẽ sớm liên
+                                    lạc với quý khách, xin cảm ơn!
+                                </p>
+                            </div>
+                        </div>
                     </div>
-
-                    <button
-                        id="start-chat-btn"
-                        type="submit"
-                        class="btn btn-primary border-0 position-absolute"
-                    >
-                        Bắt đầu chat
-                    </button>
                 </div>
-            </div>
 
-            <div id="form" class="infor-form hidden"></div>
+                <button
+                    id="start-chat-btn"
+                    type="submit"
+                    class="btn btn-primary border-0 position-absolute"
+                >
+                    Bắt đầu chat
+                </button>
+            </div>
         </div>
 
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
