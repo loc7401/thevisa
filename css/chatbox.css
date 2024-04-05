@@ -13,6 +13,7 @@
 
 .button:hover {
     cursor: pointer;
+    /* opacity: 0.8; */
 }
 
 .button i {
@@ -28,11 +29,11 @@
     padding: 24px 24px;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
     display: none;
-    border-radius: 20px;
+    border-radius: 8px;
     transform-origin: calc(100% - 10px) bottom;
-    animation: header__notify-fadeIn ease-in 0.4s;
+    animation: header__notify-fadeIn ease-in 0.3s;
     width: 370px;
-    min-height: 485px;
+    min-height: 550px;
     z-index: 9999;
 }
 
@@ -53,7 +54,7 @@
 }
 
 .popup-content {
-    background-color: white;
+    background-color: #4bb74b;
     max-width: 230px;
     min-height: 62px;
     border-radius: 20px 20px 20px 0;
@@ -91,10 +92,11 @@
 .popup-content p {
     margin: 0;
     font-size: 0.9rem;
+    color: white;
 }
 
 .chat-content {
-    background-color: #4bb74b;
+    background-color: white;
     min-height: 250px;
     border-radius: 10px;
 }
@@ -161,12 +163,24 @@
     align-items: center;
 }
 
+.popup .btn:hover {
+    opacity: 0.8;
+}
+
+.popup .btn:active {
+    background-color: var(--primary-color);
+}
+
 .btn-send {
     padding: 5px 10px;
     border: 0;
     border-radius: 3px;
     background-color: var(--primary-color);
     color: white;
+}
+
+.card-body .form {
+    padding-bottom: 10px;
 }
 
 .icon-wrapper {
@@ -178,7 +192,15 @@
     background-color: #e0e5e5;
     padding: 8px;
     border-radius: 50%;
+    width: 30px;
+    height: 30px;
 }
+
+.icon-wrapper i:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
 @media (max-width: 576px) {
     .popup {
         right: 1em;

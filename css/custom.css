@@ -87,31 +87,31 @@
     margin-right: 65px;
 } */
 
-.page-list .nav-link {
+/* .page-list .nav-link {
     color: white;
     font-weight: 500;
-}
+} */
 
-.page-list li {
-    padding: 0px 10px;
-    font-size: 1rem;
+.header .navbar-nav li {
+    /* padding: 0px 10px;
+    font-size: 1rem; */
     position: relative;
 }
 
-.page-list li::after {
+.header .navbar-nav li::after {
     content: "";
     display: inline-block;
-    top: -19%;
-    right: 22%;
+    top: -23px;
+    right: 0;
     width: 0;
     height: 2px;
     background-color: var(--primary-color);
     position: absolute;
-    transition: width 0.4s;
+    transition: width 0.5s;
 }
 
-.page-list li:hover::after {
-    width: 50px;
+.header .navbar-nav li:hover::after {
+    width: 100%;
 }
 
 .header .navbar-nav li:last-child {
