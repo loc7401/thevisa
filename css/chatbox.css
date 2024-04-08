@@ -5,19 +5,19 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: #227ebb;
+    background-color: #3d9b3d;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.button:before,
+/* .button:before,
 .button:after {
     content: "";
     position: absolute;
     height: 100%;
     width: 100%;
-    background-color: #8a82fb;
+    background-color: #3d9b3d;
     border-radius: 50%;
     z-index: -1;
     opacity: 0.7;
@@ -29,7 +29,7 @@
 
 .button:after {
     animation: button 2s 1s ease-out infinite;
-}
+} */
 
 @keyframes button {
     100% {
@@ -52,7 +52,7 @@
     bottom: 6em;
     right: 2em;
     background-color: #fff;
-    padding: 12px 12px 24px 24px;
+    padding: 12px;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
     display: none;
     border-radius: 8px;
@@ -92,12 +92,13 @@
     position: absolute;
     display: block;
     content: "";
-    width: 11px;
-    height: 11px;
+    width: 14px;
+    height: 14px;
     background-color: green;
     border-radius: 50%;
-    bottom: 5px;
+    bottom: 2px;
     left: -19px;
+    border: 2px solid #fff;
 }
 
 @keyframes header__notify-fadeIn {
@@ -187,12 +188,16 @@
     height: 55px;
     margin: 10px 6px 0 0;
     border-radius: 50%;
-    border: 2px solid #e9ecef;
+    border: 2px solid #adb5bd;
     position: relative;
 }
 
 .change-color {
     background-color: #184d99;
+}
+
+.change-height {
+    height: 330px;
 }
 
 .chat-box {
@@ -237,7 +242,7 @@
 
 .icon-wrapper {
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
     width: 100%;
 }
 

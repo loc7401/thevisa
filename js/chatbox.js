@@ -1,115 +1,124 @@
-var toggleButton = document.getElementById("showPopupButton");
-var btnStartChat = document.getElementById("start-chat-btn");
-var btnSend = document.getElementById("btn-send");
-var btnClose = document.getElementById("close-btn");
-
-var chatContent = document.getElementById("chat-content");
-
-var popup = document.getElementById("popup");
-var helloMess = document.getElementById("hello-mess");
-var newMess = document.getElementById("new-mess");
-var thanksMess = document.getElementById("thanks-mess");
-var goodDayMess = document.getElementById("good-mess");
-
-toggleButton.addEventListener("click", function () {
+$(document).ready(function () {
     setTimeout(() => {
-        helloMess.classList.remove("hidden");
-        helloMess.classList.add("visible");
-    }, 800);
+        $("#popup").removeClass("hidden");
+        $("#popup").addClass("visible");
+        $("#showPopupButton").html('<i class="fa-solid fa-xmark"></i>');
 
-    if (popup.classList.contains("hidden")) {
-        popup.classList.remove("hidden");
-        popup.classList.add("visible");
-    } else {
-        popup.classList.remove("visible");
-        popup.classList.add("hidden");
-    }
-
-    if (popup.classList.contains("visible")) {
         setTimeout(() => {
-            toggleButton.innerHTML = '<i class="fa-solid fa-xmark"></i>';
-            toggleButton.classList.add("change-color");
-        }, 400);
-    } else {
-        toggleButton.innerHTML = '<i class="message-icon fa-solid fa-comments"></i>';
-        toggleButton.classList.remove("change-color");
-    }
+            $("#hello-mess").removeClass("hidden");
+            $("#hello-mess").addClass("visible");
+        }, 800);
+    }, 10000);
 
-    if (goodDayMess.classList.contains("visible")) {
-        goodDayMess.classList.remove("visible");
-        goodDayMess.classList.add("hidden");
-
-        thanksMess.classList.remove("visible");
-        thanksMess.classList.add("hidden");
-
-        newMess.classList.remove("visible");
-        newMess.classList.add("hidden");
-    }
-
-    if (newMess.classList.contains("hidden")) {
-        btnStartChat.classList.remove("hidden");
-        btnStartChat.classList.add("visible");
-    }
-});
-
-btnStartChat.addEventListener("click", function () {
-    if (newMess.classList.contains("hidden")) {
+    $("#showPopupButton").on("click", function () {
         setTimeout(() => {
-            newMess.classList.remove("hidden");
-            newMess.classList.add("visible");
+            $("#hello-mess").removeClass("hidden");
+            $("#hello-mess").addClass("visible");
+        }, 800);
 
-            btnStartChat.classList.add("hidden");
-        }, 600);
-    }
+        if ($("#popup").hasClass("hidden")) {
+            $("#popup").removeClass("hidden");
+            $("#popup").addClass("visible");
+        } else {
+            $("#popup").removeClass("visible");
+            $("#popup").addClass("hidden");
+        }
 
-    if (btnStartChat.classList.contains("visible")) {
-        setTimeout(() => {
-            btnStartChat.classList.remove("visible");
-            btnStartChat.classList.add("hidden");
-        }, 400);
-    }
-
-    if (thanksMess.classList.contains("visible")) {
-        setTimeout(() => {
-            thanksMess.classList.remove("visible");
-            thanksMess.classList.add("hidden");
-        }, 400);
-    }
-});
-
-btnSend.addEventListener("click", function () {
-    if (thanksMess.classList.contains("hidden")) {
-        setTimeout(() => {
-            thanksMess.classList.remove("hidden");
-            thanksMess.classList.add("visible");
-            chatContent.scrollTop = chatContent.scrollHeight;
+        if ($("#popup").hasClass("visible")) {
             setTimeout(() => {
-                goodDayMess.classList.add("visible");
-                chatContent.scrollTop = chatContent.scrollHeight;
-            }, 1000);
-        }, 2000);
-    } else {
-        thanksMess.classList.add("");
-    }
+                $("#showPopupButton").html('<i class="fa-solid fa-xmark"></i>');
+                // $("#showPopupButton").addClass("change-color");
+            }, 400);
+        } else {
+            $("#showPopupButton").html('<i class="message-icon fa-solid fa-comments"></i>');
+            // $("#showPopupButton").removeClass("change-color");
+        }
 
-    btnStartChat.classList.remove("visible");
-    btnStartChat.classList.add("hidden");
-});
+        if ($("#good-mess").hasClass("visible")) {
+            $("#good-mess").removeClass("visible");
+            $("#good-mess").addClass("hidden");
 
-btnClose.addEventListener("click", function () {
-    if (goodDayMess.classList.contains("visible")) {
-        goodDayMess.classList.remove("visible");
-        goodDayMess.classList.add("hidden");
+            $("#thanks-mess").removeClass("visible");
+            $("#thanks-mess").addClass("hidden");
 
-        thanksMess.classList.remove("visible");
-        thanksMess.classList.add("hidden");
+            $("#new-mess").removeClass("visible");
+            $("#new-mess").addClass("hidden");
 
-        newMess.classList.remove("visible");
-        newMess.classList.add("hidden");
-    }
+            $("#chat-content").removeClass("change-height");
+        }
 
-    popup.classList.remove("visible");
-    popup.classList.add("hidden");
+        if ($("#new-mess").hasClass("hidden")) {
+            $("#start-chat-btn").removeClass("hidden");
+            $("#start-chat-btn").addClass("visible");
+        }
 
-    toggleButton.innerHTML = '<i class="message-icon fa-solid fa-comments"></i>';
+        // if ($("#thanks-mess").hasClass("visible")) {
+        //     $("#chat-content").removeClass("change-height");
+        // }
+    });
+
+    $("#close-btn").on("click", function () {
+        if ($("#good-mess").hasClass("visible")) {
+            $("#good-mess").removeClass("visible");
+            $("#good-mess").addClass("hidden");
+
+            $("#thanks-mess").removeClass("visible");
+            $("#thanks-mess").addClass("hidden");
+
+            $("#new-mess").removeClass("visible");
+            $("#new-mess").addClass("hidden");
+
+            $("#chat-content").removeClass("change-height");
+        }
+
+        $("#popup").removeClass("visible");
+        $("#popup").addClass("hidden");
+
+        $("#showPopupButton").html('<i class="message-icon fa-solid fa-comments"></i>');
+    });
+
+    $("#start-chat-btn").on("click", function () {
+        if ($("#new-mess").hasClass("hidden")) {
+            setTimeout(() => {
+                $("#new-mess").removeClass("hidden");
+                $("#new-mess").addClass("visible");
+
+                $("#start-chat-btn").addClass("hidden");
+            }, 600);
+        }
+
+        if ($("#start-chat-btn").hasClass("visible")) {
+            setTimeout(() => {
+                $("#start-chat-btn").removeClass("visible");
+                $("#start-chat-btn").addClass("hidden");
+                $("#chat-content").addClass("change-height");
+            }, 400);
+        }
+
+        if ($("#thanks-mess").hasClass("visible")) {
+            setTimeout(() => {
+                $("#thanks-mess").removeClass("visible");
+                $("#thanks-mess").addClass("hidden");
+            }, 400);
+        }
+    });
+
+    $("#btn-send").on("click", function () {
+        if ($("#thanks-mess").hasClass("hidden")) {
+            setTimeout(() => {
+                $("#thanks-mess").removeClass("hidden");
+                $("#thanks-mess").addClass("visible");
+                $("#chat-content").scrollTop($("#chat-content")[0].scrollHeight);
+                setTimeout(() => {
+                    $("#good-mess").addClass("visible");
+                    $("#chat-content").scrollTop($("#chat-content")[0].scrollHeight);
+                }, 1000);
+            }, 1500);
+        } else {
+            $("#thanks-mess").addClass("");
+        }
+
+        $("#start-chat-btn").removeClass("visible");
+        $("#start-chat-btn").addClass("hidden");
+    });
 });
