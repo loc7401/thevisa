@@ -31,6 +31,28 @@
     animation: button 2s 1s ease-out infinite;
 } */
 
+@keyframes shake {
+    0% {
+        transform: rotate(-5deg);
+    }
+    25% {
+        transform: rotate(10deg);
+    }
+    50% {
+        transform: rotate(-5deg);
+    }
+    75% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-2deg);
+    }
+}
+
+.animation-btn {
+    animation: shake 0.8s ease-in-out infinite;
+}
+
 @keyframes button {
     100% {
         transform: scale(2.5);
@@ -43,9 +65,25 @@
 }
 
 .button i {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     color: white;
+    position: relative;
 }
+
+/* .button i::after {
+    content: "1";
+    top: -12px;
+    right: -8px;
+    background-color: red;
+    color: white;
+    position: absolute;
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    font-size: 0.8rem;
+    padding: 3px;
+    text-align: center;
+} */
 
 .popup {
     position: fixed;

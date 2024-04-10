@@ -1,8 +1,11 @@
 $(document).ready(function () {
-    setTimeout(showPopup, 10000);
+    setTimeout(() => {
+        showPopup();
+        $("#showPopupButton").html('<i class="fa-solid fa-xmark"></i>');
+    }, 10000);
 
     function showPopup() {
-        toggleShow($("#popup"));
+        $("#popup").addClass("visible").removeClass("hidden");
         setTimeout(() => {
             $("#hello-mess").removeClass("hidden").addClass("visible");
         }, 800);
@@ -14,12 +17,15 @@ $(document).ready(function () {
 
             setTimeout(() => {
                 $("#showPopupButton").html('<i class="fa-solid fa-xmark"></i>');
+                $("#showPopupButton").removeClass("animation-btn");
             }, 400);
         } else {
             if (toggleShow($("#popup"))) {
                 $("#showPopupButton").html('<i class="message-icon fa-solid fa-comments"></i>');
+                $("#showPopupButton").addClass("animation-btn");
             }
         }
+
         if ($("#good-mess").hasClass("visible")) {
             resetMessages();
         }
@@ -44,11 +50,12 @@ $(document).ready(function () {
         $("#chat-content").removeClass("change-height");
     }
 
-    $("#showPopupButton").on("click", togglePopup);
+    $("#showPopupButton").click(togglePopup);
 
-    $("#close-btn").on("click", function () {
-        if (toggleShow($("#popup")) == true) {
+    $("#close-btn").click(function () {
+        if (toggleShow($("#popup"))) {
             $("#showPopupButton").html('<i class="message-icon fa-solid fa-comments"></i>');
+            $("#showPopupButton").addClass("animation-btn");
         }
 
         if ($("#good-mess").hasClass("visible")) {
@@ -56,21 +63,21 @@ $(document).ready(function () {
         }
     });
 
-    $("#start-chat-btn").on("click", function () {
-        setTimeout(function () {
+    $("#start-chat-btn").click(function () {
+        setTimeout(() => {
             toggleShow($("#new-mess"));
             toggleShow($("#start-chat-btn"));
             $("#chat-content").addClass("change-height");
-        }, 400);
+        }, 700);
     });
 
-    $("#btn-send").on("click", function () {
+    $("#btn-send").click(function () {
         if ($("#good-mess").hasClass("hidden")) {
-            setTimeout(function () {
+            setTimeout(() => {
                 toggleShow($("#thanks-mess"));
                 $("#chat-content").scrollTop($("#chat-content")[0].scrollHeight);
 
-                setTimeout(function () {
+                setTimeout(() => {
                     toggleShow($("#good-mess"));
                     $("#chat-content").scrollTop($("#chat-content")[0].scrollHeight);
                 }, 1000);
